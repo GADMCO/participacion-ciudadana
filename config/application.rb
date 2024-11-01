@@ -55,7 +55,7 @@ module Consul
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
-    config.time_zone = Rails.application.secrets.time_zone.presence || "Madrid"
+    config.time_zone = Rails.application.secrets.time_zone.presence || "Quito"
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
@@ -81,6 +81,7 @@ module Consul
       "hr",
       "id",
       "it",
+      "ki",
       "ka",
       "ne",
       "nl",
@@ -110,7 +111,8 @@ module Consul
       "it" => "es",
       "oc" => "fr",
       "pt-BR" => "es",
-      "val" => "es"
+      "val" => "es",
+      "ki" => "es"
     }]
 
     initializer :exclude_custom_locales_automatic_loading, before: :add_locales do
