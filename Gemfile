@@ -61,7 +61,7 @@ gem "uuidtools", "~> 2.2.0"
 gem "view_component", "~> 3.11.0"
 gem "whenever", "~> 1.0.0", require: false
 gem "wicked_pdf", "~> 2.8.1"
-gem "wkhtmltopdf-edge"
+gem "wkhtmltopdf-binary-edge"
 
 group :development, :test do
   gem "debug", "~> 1.9.2"
